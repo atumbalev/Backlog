@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+.main-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.main-header h1 {
+    margin: 0;
+    margin-left: 1rem;
+    padding: .5rem;
+    font-weight: normal;
+}
+
+.profile {
+    margin: auto 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-picture {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.username {
+    margin: auto;
+    margin-right: 1rem;
+    margin-left: .5rem;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.logout-button {
+    border: #8C968B 1px solid;
+    color: #8C968B;
+    font-weight: bold;
+    background: transparent;
+    border-radius: 12px;
+    padding: .4rem .6rem;
+    margin: .5rem;
+}
+
+@media only screen and (max-width: 1024px){
+    .main-header {
+        margin: auto;
+    }
+    .username {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .username {
+        visibility: hidden;
+        width: 0;
+    }
+}

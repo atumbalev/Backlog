@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backlog</title>
+    <link rel="stylesheet" href="style/stylesheet.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/backlog.css" />
+</head>
+<body>
+    <div class="root">
+        <header class="main-header">
+            <h1>Backlog</h1>
+            <div class="profile">
+                <img class="profile-picture" src="images/avatar.png" alt="Avatar">
+                <p class="username">Atanas Tumbalev</p>
+                <button class="logout-button" onclick="location.href='index.html'">Log out</button>
+            </div>
+        </header>
+        <main>
+            <div class="board-container">
+                <div id="issues">
+                    <div class="issues-block">
+                        <div class="issue-container">
+                            <h2>Open</h2>
+                            <ul class="issues-list" id="open">
+                                <li id="add-issue">
+                                    <img class="add-btn-img" src="images/addButton.png" alt="Add issue"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="issue-container">
+                            <h2>In Progress</h2>
+                            <ul class="issues-list" id="in-progress">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="issues-block">
+                        <div class="issue-container">
+                            <h2>Resolved</h2>
+                            <ul class="issues-list" id="resolved">
+
+                            </ul>
+                        </div>
+                        <div class="issue-container">
+                            <h2>Closed</h2>
+                            <ul class="issues-list" id="closed">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="issues-list" id="deletion-tray">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts/dragAndDrop.js"></script>
+    <script src="scripts/createIssue.js"></script>
+    <script src="scripts/loadBoard.js"></script>
+</body>
+</html>
